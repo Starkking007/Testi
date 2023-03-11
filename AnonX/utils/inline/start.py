@@ -39,9 +39,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         [
             InlineKeyboardButton(
                 text="𝗛𝗲𝗹𝗽", callback_data="settings_back_helper"
-            )
-        ],
-        [
+            ),
             InlineKeyboardButton(
                 text="𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url=config.SUPPORT_GROUP
             )
