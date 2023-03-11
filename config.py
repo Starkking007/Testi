@@ -93,7 +93,7 @@ TELEGRAM_AUDIO_URL = "https://telegra.ph/file/b5e1580d619a9e0c2d439.jpg"
 
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/b5e1580d619a9e0c2d439.jpg"
 
-STREAM_IMG_URL = "https://telegra.ph/file/b5e1580d619a9e0c2d439.jpg"
+STREAM_IMG_URL = "https://telegra.ph/file/6b6a14685ee8eb7ba6d53.mp4"
 
 SOUNCLOUD_IMG_URL = "https://telegra.ph/file/b5e1580d619a9e0c2d439.jpg"
 
@@ -135,4 +135,4 @@ if PING_IMG_URL:
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://telegra.ph/file/b5e1580d619a9e0c2d439.jpg"
+            START_IMG_URL = "https://telegra.ph/file/6b6a14685ee8eb7ba6d53.mp4"
