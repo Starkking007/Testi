@@ -14,7 +14,7 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Red-Wine")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝗕𝗲𝗹𝗶𝗲𝘃𝗲𝗿𝘀 𝗺𝘂𝘀𝗶𝗰 𝗯𝗼𝘁 🎶")
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "1711510822").split()))
 
@@ -25,8 +25,8 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/dropexj/testi")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/about_lav")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/fun_world143")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/believerupdate")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/believerssupport")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
@@ -76,7 +76,7 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/b5e1580d619a9e0c2d439.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/6b6a14685ee8eb7ba6d53.mp4")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
