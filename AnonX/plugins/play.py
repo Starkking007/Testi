@@ -3,7 +3,7 @@ import string
 from ast import ExceptHandler
 
 from pyrogram import filters
-from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto,
+from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto, InlineKeyboardButton,
                             Message)
 from pytgcalls.exceptions import NoActiveGroupCall
 
@@ -13,6 +13,7 @@ from strings import get_command
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
 from AnonX.core.call import Anon
+from AnonX.utils.database import is_served_user
 from AnonX.utils import seconds_to_min, time_to_seconds
 from AnonX.utils.channelplay import get_channeplayCB
 from AnonX.utils.database import is_video_allowed
@@ -48,6 +49,21 @@ async def play_commnd(
     url,
     fplay,
 ):
+    if not await is_served_user(message.from_user.id):
+        await message.reply_text(
+            text="ᴇʀʀᴏʀ, ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀ ᴠᴇʀɪғɪᴇᴅ ᴜsᴇʀ.\nᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴠᴇʀɪғʏ ʏᴏᴜʀsᴇʟғ.",
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪғʏ",
+                            url=f"https://t.me/{app.username}?start=verify",
+                        )
+                    ]
+                ]
+            ),
+        )
+        return
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
