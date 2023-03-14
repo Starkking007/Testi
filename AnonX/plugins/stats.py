@@ -9,13 +9,13 @@ from pyrogram.errors import MessageIdInvalid
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
-from AnonX import config
-from AnonX.config import BANNED_USERS, MUSIC_BOT_NAME
-from AnonX.strings import get_command
+import config
+from config import BANNED_USERS, MUSIC_BOT_NAME
+from strings import get_command
 from AnonX import YouTube, app
 from AnonX.core.userbot import assistants
 from AnonX.misc import SUDOERS, pymongodb
-from plugins import ALL_MODULES
+from AnonX plugins import ALL_MODULES
 from AnonX.utils.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
