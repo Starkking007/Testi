@@ -15,7 +15,7 @@ from strings import get_command
 from AnonX import YouTube, app
 from AnonX.core.userbot import assistants
 from AnonX.misc import SUDOERS, pymongodb
-from AnonX plugins import ALL_MODULES
+from AnonX.plugins import ALL_MODULES
 from AnonX.utils.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
